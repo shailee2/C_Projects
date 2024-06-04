@@ -1,0 +1,31 @@
+; Shailee Patel
+; 11/9/2023
+; This function aims to add all positive numbers from x3132 to x313B from numbers.bin, and store the result in register 5.
+
+; R3 is the pointer. It points to which address to examine if it is positive.
+; R4 is the counter. This counts down and decides when to halt the program.
+; R5 is the sum. This will hold the sum of all positive numbers from x3132 to x313B from numbers.bin
+; R6 is a temporary register that temporarily holds the value of R3 to evaluate if it is positive
+
+; This is the file you will use for the lab assignment
+; Make sure to comment your code properly and don't exceed 
+; the line limitation for this assignment.  Good luck!
+
+0011 0001 0000 0000 ; x3100 - starting address of the program
+
+; The program description and code starts here
+1110 011 000110001 ; x3100 - R3 is initialized with x3132. This is the pointer.
+0101 100 100 1 00000 ; x3101 - R4 is initialized with x0000
+0001 100 100 1 01010 ; x3102 - R4 is initialized with x000A. This is the counter (holding the value of 10).
+0101 101 101 1 00000 ; x3103 - R5 is initialized with x0000. This is the sum.
+0101 110 000000000 ; x3104 - R6 is initialized with x0000.
+
+0001 100 100 1 11111 ; x3105 - Decrements R4 by 1
+0110 110 011 000000 ; x3106 - The value of R3 is loaded into R6
+0000 110 000000001 ; x3107 - Checks if the previous value is negative or zero. If value is negative or zero, PC is PC+1.
+0001 101 101 0 00 110 ; x3108 - R5 is updated to R6 + R5 if R6 was positive
+0001 011 011 1 00001 ; x3109 - The value of R3 is updated by 1.
+0001 100 100 1 00000 ; x310A - Relays value of R4
+0000 001 111111001 ; x310B - Checks if R4 is positive. PC is now x3105
+
+1111 0000 0010 0101 ; x310C - Halts the program
