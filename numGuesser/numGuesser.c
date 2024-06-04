@@ -1,6 +1,5 @@
 //Shailee Patel
 //netid: shailee2
-//partner netids: amanda51, bijoucl2
 /*Introduction: This program is a game where the user inputs guesses to try to find the correct solution. In the set_seed function, we set the seed value to create the solution for this game using the srand() function. In the start_game function, we utilize the rand() function to create the actual numbers for the solution, making sure to only choose integers from 1-8. In the make_guess function, we utilize an algorithm that first checks if the guesses are valid. Then, we pair correct guesses and correct solutions to check if the user has entered the solution or not, placing this value in correct guesses. Then, if the solutions are not paired yet, we check if their guess matches with any of the other numbers that are part of the solution, placing this value in misplaced guesses. The program then prints out a statement saying the amount of correct numbers and misplaced numbers the user has entered, as well as the number of guesses they have. */
 
 /*			
@@ -21,7 +20,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "prog5.h"
+#include "numGuesser.h"
 
 
 /*
