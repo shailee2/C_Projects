@@ -6,7 +6,7 @@
 
 #ifndef SP_MAT
 #define SP_MAT
-#include "sparsemat.h"
+#include "sparseMatrix.h"
 #endif
 
 
