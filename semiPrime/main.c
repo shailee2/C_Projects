@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "semiprime.h"
+#include "semiPrime.h"
 
 
 /*
