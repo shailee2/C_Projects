@@ -6,7 +6,7 @@
 #include "cmp_mat.h"
 #ifndef SP_MAT
 #define SP_MAT
-#include "sparsemat.h"
+#include "sparseMatrix.h"
 #endif
 
 int main(int argc, char *argv[]){
