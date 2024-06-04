@@ -1,5 +1,4 @@
-#include "game.h"
-//Partners: amanda51,  bijoucl2
+#include "mysteryGame.h"
 
 // NAME: Shailee Patel  NETID: shailee2
 
