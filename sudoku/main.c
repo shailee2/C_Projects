@@ -1,5 +1,4 @@
 #include "sudoku.h"
-#include "sudoku_golden.h"
 
 int main(int argc, char **argv) {
 
