@@ -3,7 +3,7 @@
 /* 
  * Your code is included as part of this file.
  */
-#include "prog5.h"
+#include "numGuesser.h"
 
 
 
