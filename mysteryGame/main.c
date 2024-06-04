@@ -1,4 +1,4 @@
-#include "game.h"
+#include "mysteryGame.h"
 #include "getch_fun.h"
 #include <malloc.h>
 
